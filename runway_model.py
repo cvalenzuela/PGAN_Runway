@@ -13,16 +13,6 @@ def setup(opts):
                 inputs={ 'z': runway.vector(512, sampling_std=0.5) },
                 outputs={ 'image': runway.image })
 def generate(model, inputs):
-    # num_images = 1
-    # noise, _ = model.buildNoiseData(num_images)
-    # print('latents', latents.size())
-    # print('min latents', torch.min(latents))
-    # print('max latents', torch.max(latents))
-
-    # print('noise', noise.size())
-    # print('min noise', torch.min(noise))
-    # print('max noise', torch.max(noise))
-
     z = inputs['z']
     latents = z.reshape((1, 512))
     latents = torch.from_numpy(latents)
