@@ -4,7 +4,7 @@ framework: pytorch
 cuda: 9.0
 spec:
   gpu: True
-  cpu: False
+  cpu: True
 files:
   ignore:
     - checkpoints/*

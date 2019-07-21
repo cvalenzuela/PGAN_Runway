@@ -24,4 +24,4 @@ def generate(model, inputs):
     return generated_image[0].permute(1, 2, 0).numpy().astype(np.uint8)
 
 if __name__ == '__main__':
-    runway.run(host='0.0.0.0', port=8000)
+    runway.run(port=5232)
