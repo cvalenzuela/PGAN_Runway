@@ -3,14 +3,19 @@ import torchvision
 import numpy as np
 import runway
 
-@runway.setup(options={})
+checkpoint_description = "Pretrained checkpoints to use."
+
+@runway.setup(options={"checkpoint": runway.category(description=checkpoint_description,
+                                                choices=['celebAHQ-512', 'celebAHQ-256', 'DTD', 'celeba'],
+                                                default='celebAHQ-512')})
 def setup(opts):
+    checkpoint = opts['checkpoint']
     use_gpu = True if torch.cuda.is_available() else False
-    model = torch.hub.load('facebookresearch/pytorch_GAN_zoo:hub', 'PGAN', model_name='celebAHQ-512', pretrained=True, useGPU=use_gpu)
+    model = torch.hub.load('facebookresearch/pytorch_GAN_zoo:hub', 'PGAN', model_name=checkpoint, pretrained=True, useGPU=use_gpu)
     return model
 
 @runway.command('generate',
-                inputs={ 'z': runway.vector(512, sampling_std=0.5) },
+                inputs={ 'z': runway.vector(512, sampling_std=0.5)},
                 outputs={ 'image': runway.image })
 def generate(model, inputs):
     z = inputs['z']
