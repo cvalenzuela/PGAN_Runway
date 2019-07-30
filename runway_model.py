@@ -9,7 +9,6 @@
 
 # Import our dependencies
 import torch
-import torchvision
 import numpy as np
 import runway # Be sure to install it first!: pip3 install runway-python
 
