@@ -18,7 +18,7 @@ import runway # Be sure to install it first!: pip3 install runway-python
 # list of supported configs. The setup function should return the model ready to
 # be used.
 @runway.setup(options={"checkpoint": runway.category(description="Pretrained checkpoints to use.",
-                                                choices=['celebAHQ-512', 'celebAHQ-256', 'celeba', 'DTD'],
+                                                choices=['celebAHQ-512', 'celebAHQ-256', 'celeba'],
                                                 default='celebAHQ-512')})
 def setup(opts):
     checkpoint = opts['checkpoint']
