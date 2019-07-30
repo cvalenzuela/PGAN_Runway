@@ -8,4 +8,4 @@ files:
   ignore:
     - checkpoints/*
 build_steps:
-  - pip install -r requirements.txt
+  - pip install torch==1.1.0 runway-python numpy==1.16.4
