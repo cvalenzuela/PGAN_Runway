@@ -11,6 +11,7 @@ https://medium.com/runwayml/porting-a-machine-learning-model-from-github-to-runw
 
 ## Useful Links:
 
+- [Open this model in Runway](runwayml://model=365)
 - [Runway Model Template](https://github.com/runwayml/model-template)
 - [Runway Documentation](http://docs.runwayml.com)
 - [Video Tutorials](https://www.youtube.com/channel/UCUBqu_z5uP0AZhYtuyFZB3g)
