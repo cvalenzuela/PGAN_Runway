@@ -1,6 +1,6 @@
 # Progressive Growing of GANs (PGAN) ported to Runway
 
-<a href="https://open-app.runwayml.com/?model=cris/Progressive-Growing-of-GANs-PGAN" target="_blank"><img src="https://open-app.runwayml.com/gh-badge.svg" /></a>
+<a href="https://open-app.runwayml.com/?model=cris/Progressive-Growing-of-GANs-PGAN" target="_blank"><img src="https://open-app.runwayml.com/gh-badge.svg"/></a>
 
 This repository contains a version of the Python [Progressive Growing of GANs (PGAN) model](https://github.com/tkarras/progressive_growing_of_gans) ported to Runway. 
 
